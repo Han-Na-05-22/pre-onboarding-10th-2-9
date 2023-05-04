@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://api.clinicaltrialskorea.com/api/v1/search-conditions/"
+  status = 200
+  force = true
+
