@@ -23,4 +23,24 @@ export const SearchForm = styled.form`
   top: 30%;
   position: relative;
   border-radius: 50px;
+
+  .xmark-btn.active {
+    display: block;
+  }
+
+  .xmark-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 75px;
+    background: none;
+    cursor: pointer;
+    display: none;
+
+    path {
+      fill: #ccc;
+    }
+  }
 `;

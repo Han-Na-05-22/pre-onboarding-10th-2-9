@@ -5,28 +5,6 @@ const TextInputContainer = styled.div`
   height: 100%;
   border-radius: inherit;
 
-  &:focus-within {
-    .xmark-btn {
-      display: block;
-    }
-  }
-
-  .xmark-btn {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 75px;
-    background: none;
-    cursor: pointer;
-    display: none;
-
-    path {
-      fill: #ccc;
-    }
-  }
-
   & > input {
     width: 100%;
     height: 100%;

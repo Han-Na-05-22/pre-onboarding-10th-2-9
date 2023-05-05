@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/proxy/*"
-  to = "https://api.clinicaltrialskorea.com/api/v1/search-conditions/"
+  to = "https://dashing-figolla-8161c3.netlify.app/:splat"
   status = 200
   force = true
 

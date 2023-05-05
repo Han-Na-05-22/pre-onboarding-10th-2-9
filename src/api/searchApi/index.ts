@@ -1,9 +1,10 @@
-import instance from '../axios';
+export const getSearchList = async (search: string) => {
+  const response = await fetch(`/api/v1/search-conditions/?name=${search}`).then((res) => {
+    return res;
+  });
 
-const getSearchList = async (search: string) => {
-  const searchList: [] = await instance.get(`?name=${search}`);
-  console.log('searchList', searchList);
-  return searchList;
+  const data = response?.json();
+  return data;
 };
 
 export default getSearchList;
